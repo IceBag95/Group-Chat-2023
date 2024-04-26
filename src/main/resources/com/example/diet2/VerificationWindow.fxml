@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="usernameLabel" prefHeight="400.0" prefWidth="600.0" stylesheets="@VerificationWindowStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diet2.VerificationController">
+   <children>
+      <TextField fx:id="usernameInput" layoutX="159.0" layoutY="129.0" prefHeight="38.0" prefWidth="270.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordInput" layoutX="159.0" layoutY="213.0" prefHeight="38.0" prefWidth="270.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="159.0" layoutY="99.0" prefHeight="30.0" prefWidth="101.0" text="Username:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="159.0" layoutY="184.0" prefHeight="30.0" prefWidth="101.0" text="Password:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="signInButton" layoutX="254.0" layoutY="300.0" mnemonicParsing="false" onAction="#SwitchToClient" prefHeight="46.0" prefWidth="81.0" text="Sign In">
+         <font>
+            <Font name="Franklin Gothic Medium" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="200.0" layoutY="257.0" prefHeight="38.0" prefWidth="189.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
